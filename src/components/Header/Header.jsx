@@ -1,2 +1,14 @@
 import './Header.css';
-import Button from '../Button/Button';
+// import Button from '../Button/Button';
+
+function Header() {
+
+    return (
+      <header className = 'app-header'>
+        <h1>Components React</h1>
+        <p>Uma aplicação simples</p>
+      </header>
+    )
+  }
+
+export default Header;

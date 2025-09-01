@@ -1,0 +1,17 @@
+.app-header{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 1rem;
+}
+
+.app-header{
+    color:  var(--cor-primaria);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.app-header p{
+    color: var(--cor-texto);
+    opacity: 0.8;
+}
+
