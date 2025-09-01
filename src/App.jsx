@@ -9,6 +9,10 @@ function App() {
 
   const [tela, setTela] = useState('login');
 
+  // const mudarTela = (setTela) => {
+  //   setTela(novaTela);
+  // }
+
   let conteudoDaTela;
 
   if (tela === 'login'){
@@ -21,6 +25,8 @@ function App() {
       <Header />
       <Menu onMenuClick={setTela}/>
       {conteudoDaTela}
+
+      {/* {tela === 'login' ? <FormularioLogin/> : <FormularioCadastro/>} */}
     </main>
   )
 }
