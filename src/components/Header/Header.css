@@ -1,10 +1,10 @@
 .app-header{
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     border-bottom: 1px solid var(--cor-borda);
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
 }
 
-.app-header{
+.app-header h1{
     color:  var(--cor-primaria);
     font-size: 2.5em;
     margin-bottom: 0.5em;
