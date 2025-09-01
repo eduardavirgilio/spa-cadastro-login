@@ -9,24 +9,24 @@ function App() {
 
   const [tela, setTela] = useState('login');
 
-  // const mudarTela = (setTela) => {
-  //   setTela(novaTela);
-  // }
-
-  let conteudoDaTela;
-
-  if (tela === 'login'){
-    conteudoDaTela = <FormularioLogin />;
-  } else {
-    conteudoDaTela = <FormularioCadastro />
+  const mudarTela = (novaTela) => {
+    setTela(novaTela);
   }
+
+  // let conteudoDaTela;
+
+  // if (tela === 'login'){
+  //   conteudoDaTela = <FormularioLogin />;
+  // } else {
+  //   conteudoDaTela = <FormularioCadastro />
+  // }
   return (
     <main>
       <Header />
-      <Menu onMenuClick={setTela}/>
-      {conteudoDaTela}
+      <Menu onMenuClick={mudarTela}/>
+      {/* {conteudoDaTela} */}
 
-      {/* {tela === 'login' ? <FormularioLogin/> : <FormularioCadastro/>} */}
+      {tela === 'login' ? <FormularioLogin /> : <FormularioCadastro />}
     </main>
   )
 }
